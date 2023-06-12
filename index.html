@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./pages/index.css" class="css">
+
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
-<body>
 
-  <!-- Sign-up form start -->
+<body class="body">
+  <main class="main">
+    <section class="newsletter">
+      <div class="newsletter_group">
+        <h1 class="newsletter__title">Stay updated!</h1>
 
-  Stay updated!
+        <p class="newsletter__subtitle">Join 60,000+ product managers receiving monthly updates on:</p>
 
-  Join 60,000+ product managers receiving monthly updates on:
+        <ul class="newsletter__lists">
+          <li class="newsletter__list">
+            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <p class="newsletter__text">Product discovery and building what matters</p>
+          </li>
 
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
+          <li class="newsletter__list">
+            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <p class="newsletter__text">Measuring to ensure updates are a success</p>
+          </li>
 
-  Email address
-  email@company.com
+          <li class="newsletter__list">
+            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <p class="newsletter__text">And much more!</p>
+          </li>
+        </ul>
 
-  Subscribe to monthly newsletter
+        <form class="newsletter__form" name="addEmail">
+          <label class="newsletter__label">Email address</label>
+          <input type="email" class="newsletter__input" placeholder="email@company.com">
+          <button class="newsletter__button">Subscribe to monthly newsletter</button>
+        </form>
 
-  <!-- Sign-up form end -->
 
-  <!-- Success message start -->
+        <!-- Thanks for subscribing!
 
-  Thanks for subscribing!
+        A confirmation email has been sent to ash@loremcompany.com.
+        Please open it and click the button inside to confirm your subscription.
 
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
+        Dismiss message -->
 
-  Dismiss message
+      </div>
 
-  <!-- Success message end -->
-  
+      <img src="./images/illustration-sign-up-desktop.svg" alt="" class="newsletter__img">
+    </section>
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Alexander M</a>.
   </div>
 </body>
+
 </html>
