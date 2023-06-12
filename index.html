@@ -10,18 +10,6 @@
   <link rel="stylesheet" href="./pages/index.css" class="css">
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body class="body">
@@ -58,17 +46,20 @@
           <button type="submit" class="newsletter__button">Subscribe to monthly newsletter</button>
         </form>
 
-
-        <!-- Thanks for subscribing!
-
-        A confirmation email has been sent to ash@loremcompany.com.
-        Please open it and click the button inside to confirm your subscription.
-
-        Dismiss message -->
-
       </div>
 
-      <img src="./images/illustration-sign-up-desktop.svg" alt="" class="newsletter__img">
+      <div class="newslatter__group-thanks">
+        <img src="./images/icon-success.svg" alt="" class="newslatter__icon">
+        <h2 class="newsletter__title">Thanks for subscribing!</h2>
+        <p class="newsletter__subtitle">A confirmation email has been sent to <span>ash@loremcompany.com</span>.
+          Please open it and click the button inside to confirm your subscription.</p>
+        <button class="newsletter__button">Dismiss message</button>
+      </div>
+
+      <picture>
+        <source media="(max-width: 980px)" srcset="./images/illustration-sign-up-mobile.svg">
+        <img src="./images/illustration-sign-up-desktop.svg" alt="" class="newsletter__img">
+      </picture>
     </section>
   </main>
 </body>
