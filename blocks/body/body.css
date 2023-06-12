@@ -1,3 +1,11 @@
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
 * {
     scroll-behavior: smooth;
 }
@@ -5,7 +13,7 @@
 .body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    background-color: hsl(235, 18%, 26%);
+    background-color: var(--CharcoalGrey);
 }
 
 .button {
@@ -24,7 +32,7 @@
     margin: 0 auto;
     padding: 20px;
     max-width: 930px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--White);
     border-radius: 30px;
     display: flex;
     justify-content: space-between;
@@ -39,14 +47,14 @@
 .newsletter__title {
     margin: 0;
     margin-bottom: 30px;
-    color: hsl(234, 29%, 20%);
+    color: var(--DarkSlateGrey);
     font-size: 48px;
 }
 
 .newsletter__subtitle {
     margin: 0;
     margin-bottom: 30px;
-    color: hsl(234, 29%, 20%);
+    color: var(--DarkSlateGrey);
     font-size: 16px;
 }
 
@@ -81,25 +89,25 @@
 }
 
 .newsletter__invalid-email {
-    color: hsl(4, 100%, 67%);
+    color: var(--Tomato);
 }
 
 .newsletter__input {
     margin-bottom: 30px;
     padding: 15px;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--White);
     border: hsl(231, 7%, 60%) 1px solid;
     border-radius: 6px;
 }
 
 .newsletter__input:focus {
     outline: none;
-    border-color: hsl(235, 18%, 26%);
+    border-color: var(--DarkSlateGrey);
 }
 
 .newsletter__button {
     padding: 15px;
-    background: hsl(234, 29%, 20%);
+    background: var(--DarkSlateGrey);
     color: hsl(0, 0%, 100%);
     font-weight: 700;
     border: transparent;
