@@ -89,11 +89,21 @@
     border-radius: 6px;
 }
 
+.newsletter__input:focus {
+    outline: none;
+    border-color: hsl(235, 18%, 26%);
+}
+
 .newsletter__button {
     padding: 15px;
     background-color: hsl(234, 29%, 20%);
     color: hsl(0, 0%, 100%);
+    font-weight: 700;
     border: transparent;
     border-radius: 6px;
     cursor: pointer;
+}
+
+.newsletter__button:hover {
+    background-image: linear-gradient(to right, #f857a6 0%, #ff5858 51%, #f857a6 100%);
 }
