@@ -50,9 +50,12 @@
         </ul>
 
         <form class="newsletter__form" name="addEmail">
-          <label class="newsletter__label">Email address</label>
+          <label class="newsletter__label">
+            <p class="newsletter__name">Email address</p>
+            <p class="newsletter__invalid-email">Valid email required</p>
+          </label>
           <input type="email" class="newsletter__input" placeholder="email@company.com">
-          <button class="newsletter__button">Subscribe to monthly newsletter</button>
+          <button type="submit" class="newsletter__button">Subscribe to monthly newsletter</button>
         </form>
 
 
@@ -68,11 +71,6 @@
       <img src="./images/illustration-sign-up-desktop.svg" alt="" class="newsletter__img">
     </section>
   </main>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Alexander M</a>.
-  </div>
 </body>
 
 </html>
