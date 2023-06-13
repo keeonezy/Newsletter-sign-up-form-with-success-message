@@ -62,5 +62,5 @@ submitButton.addEventListener("click", (evt) => {
 closeButtonDissmiss.addEventListener("click", () => {
     container.style.display = "block";
     mainImg.style.display = "block";
-    groupEmailSuccess.classList.remove("newsletter_email-active")
+    groupEmailSuccess.classList.remove("newsletter_thanks_active")
 })
