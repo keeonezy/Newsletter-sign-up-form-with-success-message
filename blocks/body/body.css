@@ -48,6 +48,7 @@
 
 .newsletter__img {
     width: 100%;
+    display: block;
 }
 
 .newsletter_group {

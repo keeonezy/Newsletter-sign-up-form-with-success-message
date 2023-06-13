@@ -4,22 +4,36 @@
 
 
 // основное окно слева
-const formGroup = document.querySelector("newsletter_group");
+const container = document.querySelector(".newsletter_group");
+console.log(container)
 // картинка справа
-const mainImg = document.querySelector("newsletter__img");
-// Кнопка сохранить email
-const submitButton = document.querySelectorAll("newsletter__button");
+const mainImg = document.querySelector(".newsletter__img");
+console.log(mainImg)
+
 // Инпут для заполнения email
-const emailInput = document.querySelector("newsletter__input");
+const emailInput = document.querySelector(".newsletter__input");
+console.log(emailInput)
+// Поле для ошибки об инвалиде email
+const invdalidEmail = document.querySelector(".newsletter__invalid-email");
+console.log(invdalidEmail)
+// Кнопка сохранить email
+const submitButton = document.querySelector(".newsletter__button-submit");
+console.log(submitButton)
+
 // Окно уапешного добавления email
-const emailSuccess = document.querySelector("newslatter__group-thanks");
+const groupEmailSuccess = document.querySelector(".newslatter__group-thanks");
+console.log(groupEmailSuccess)
+// Вывод email юзера в span
+const emailUser = document.querySelector(".newsletter__email-user")
+console.log(emailUser)
 // Кнопка закрыть окнно успешного добавления email
-const closeButtonDissmiss = document.querySelector("newsletter__button-dismiss")
+const closeButtonDissmiss = document.querySelector(".newsletter__button-dismiss")
+console.log(closeButtonDissmiss)
 
 
 function formSuccess() {
-    emailSuccess.classList.add("newsletter_email-active")
-    formGroup.style.display = "none";
+    groupEmailSuccess.classList.add("newsletter_thanks_active");
+    container.style.display = "none";
     mainImg.style.display = "none";
 }
 
@@ -32,12 +46,21 @@ submitButton.addEventListener("click", (evt) => {
     evt.preventDefault();
     const email = emailInput.value.trim();
 
-    if (emailValidate()) {
+    if (emailValidate(email)) {
         formSuccess()
+        emailUser.innerText = email;
+        emailInput.value = ""
+
+        invdalidEmail.classList.remove("newsletter_email-active")
+        emailInput.classList.remove("newsletter__input-active")
+    } else {
+        invdalidEmail.classList.add("newsletter_email-active")
+        emailInput.classList.add("newsletter__input-active")
     }
 })
 
 closeButtonDissmiss.addEventListener("click", () => {
-    formGroup.style.display = "block";
+    container.style.display = "block";
     mainImg.style.display = "block";
+    groupEmailSuccess.classList.remove("newsletter_email-active")
 })
