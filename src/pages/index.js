@@ -1,3 +1,4 @@
+import "./index.css";
 // const formEmail = document.forms.addEmail;
 // const input = formEmail.email;
 

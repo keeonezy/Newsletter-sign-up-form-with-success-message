@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./pages/index.css" class="css">
+  <link rel="icon" type="image/png" sizes="32x32" href="<%=require('../favicon-32x32.png')%>">
 
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
@@ -22,17 +21,17 @@
 
         <ul class="newsletter__lists">
           <li class="newsletter__list">
-            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <img src="<%=require('./images/icon-list.svg')%>" alt="" class="newsletter__icon">
             <p class="newsletter__text">Product discovery and building what matters</p>
           </li>
 
           <li class="newsletter__list">
-            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <img src="<%=require('./images/icon-list.svg')%>" alt="" class="newsletter__icon">
             <p class="newsletter__text">Measuring to ensure updates are a success</p>
           </li>
 
           <li class="newsletter__list">
-            <img src="./images/icon-list.svg" alt="" class="newsletter__icon">
+            <img src="<%=require('./images/icon-list.svg')%>" alt="" class="newsletter__icon">
             <p class="newsletter__text">And much more!</p>
           </li>
         </ul>
@@ -49,7 +48,7 @@
       </div>
 
       <div class="newslatter__group-thanks">
-        <img src="./images/icon-success.svg" alt="" class="newslatter__icon">
+        <img src="<%=require('./images/icon-success.svg')%>" alt="" class="newslatter__icon">
         <h2 class="newsletter__title">Thanks for subscribing!</h2>
         <p class="newsletter__subtitle">A confirmation email has been sent to <span class="newsletter__email-user">ash@loremcompany.com</span>.
           Please open it and click the button inside to confirm your subscription.</p>
@@ -58,12 +57,10 @@
 
       <picture>
         <source media="(max-width: 980px)" srcset="./images/illustration-sign-up-mobile.svg">
-        <img src="./images/illustration-sign-up-desktop.svg" alt="" class="newsletter__img">
+        <img src="<%=require('./images/illustration-sign-up-desktop.svg')%>" alt="" class="newsletter__img">
       </picture>
     </section>
   </main>
 </body>
-
-<script src="./scripts/index.js"></script>
 
 </html>
